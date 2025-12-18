@@ -1,0 +1,125 @@
+.tree-visualization {
+  flex: 1;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  min-height: 400px;
+}
+
+.tree-visualization svg {
+  width: 100%;
+  height: 100%;
+}
+
+.tree-visualization .placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: #495057;
+  padding: 20px;
+  text-align: center;
+}
+
+.tree-visualization .placeholder-icon {
+  font-size: 56px;
+  margin-bottom: 12px;
+}
+
+.tree-visualization .placeholder-title {
+  font-size: 22px;
+  font-weight: 600;
+  color: #1976D2;
+  margin-bottom: 8px;
+}
+
+.tree-visualization .placeholder-text {
+  font-size: 15px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.tree-visualization .placeholder-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 14px;
+  color: #555;
+  background: rgba(25, 118, 210, 0.08);
+  padding: 16px 24px;
+  border-radius: 12px;
+  margin-bottom: 16px;
+}
+
+.tree-visualization .placeholder-steps div {
+  text-align: left;
+}
+
+.tree-visualization .placeholder-example {
+  font-size: 13px;
+  color: #888;
+  font-style: italic;
+  background: #f8f9fa;
+  padding: 10px 16px;
+  border-radius: 8px;
+}
+
+.tree-visualization .node {
+  cursor: pointer;
+}
+
+/* Legend */
+.tree-visualization .legend {
+  position: absolute;
+  bottom: 50px;
+  left: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.98);
+  padding: 12px 16px;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+  font-size: 12px;
+  max-width: 220px;
+}
+
+.tree-visualization .legend-title {
+  font-weight: 600;
+  font-size: 13px;
+  color: #333;
+  margin-bottom: 4px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 6px;
+}
+
+.tree-visualization .legend-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #555;
+}
+
+.tree-visualization .legend-color {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* Help tip */
+.tree-visualization .help-tip {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  right: 12px;
+  background: linear-gradient(135deg, #fff3cd 0%, #ffeeba 100%);
+  color: #856404;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
